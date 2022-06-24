@@ -46,6 +46,7 @@ input {
 input.createBtn {
     width: auto;
     margin-top: 60px;
+    background-color: var(--highlight);
 }
 
 .image {
