@@ -11,3 +11,9 @@ li {
 label {
     display: block;
 }
+
+.inputs {
+    padding: 30px 0;
+    width: 100%;
+    background-color: red;
+}
