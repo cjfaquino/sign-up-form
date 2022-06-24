@@ -3,3 +3,11 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+li {
+    list-style-type: none;
+}
+
+label {
+    display: block;
+}
