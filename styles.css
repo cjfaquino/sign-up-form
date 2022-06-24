@@ -10,7 +10,6 @@ ul {
     display: flex;
     flex-shrink: 0;
     flex-wrap: wrap;
-    background-color: green;
 }
 
 li {
@@ -33,17 +32,59 @@ h1 {
     width: min(33vw, 500px);
 }
 
+h1, h1+p {
+    color: white;
+}
+
+p{
+    margin: 30px 0;
+    font-size: 2rem;
+}
+
+.left {
+    width: 500px;
+    flex-shrink: 0;
+    background: fixed;
+    background-image: url(https://images.unsplash.com/photo-1498084393753-b411b2d26b34?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2064&q=80);
+}
+
+.right {
+    background-color: rgb(247, 247, 247);
+    flex-direction: column;
+    height: 100vh;
+}
+
+.top {
+    padding-top: 100px;
+}
+
+.inputs p {
+    padding-top: 30px;
+}
+
 .flex {
     display: flex;
     width: 100%;
 }
 
 .inputs {
-    padding: 30px 0;
+    padding-bottom: 30px;
     width: 100%;
-    background-color: red;
+    background-color: white;
 }
 
 .wrapper {
     margin: 0 50px;
+}
+
+.top span {
+    display: block;
+}
+
+.top > p:last-child {
+    margin-bottom: 80px;
+}
+
+.login {
+    font-size: 1.3rem;
 }
