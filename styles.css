@@ -4,6 +4,15 @@
     box-sizing: border-box;
 }
 
+ul {
+    width: 600px;
+    gap: 30px;
+    display: flex;
+    flex-shrink: 0;
+    flex-wrap: wrap;
+    background-color: green;
+}
+
 li {
     list-style-type: none;
 }
