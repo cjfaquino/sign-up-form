@@ -21,6 +21,15 @@ label {
     display: block;
 }
 
+h1 {
+    width: min(33vw, 500px);
+}
+
+.flex {
+    display: flex;
+    width: 100%;
+}
+
 .inputs {
     padding: 30px 0;
     width: 100%;
