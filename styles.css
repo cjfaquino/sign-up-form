@@ -46,6 +46,10 @@ ul {
     list-style-type: none;
 }
 
+label, input {
+    color: white;
+}
+
 label {
     display: block;
     margin-top: 25px;
@@ -70,6 +74,7 @@ input.createBtn {
     margin-top: 60px;
     color: white;
     background-color: var(--highlight);
+    border: none;
 }
 
 .image {
@@ -142,6 +147,10 @@ input.createBtn {
         margin-bottom: 10px;
     }
 
+    .main {
+        width: 100%;
+    }
+    
     ul {
         max-width: 900px;
         display: flex;
