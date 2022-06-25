@@ -115,7 +115,7 @@ input.createBtn {
 .requirements {
     color: red;
     font-size: .8rem;
-    display: none;
+    visibility: hidden;
 }
 
 .login {
