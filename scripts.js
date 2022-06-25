@@ -22,3 +22,11 @@ function setValidation() {
     setInvalid() :
     setValid()
 }
+
+function demo() {
+    pass.value = "testdemocase"
+    passCheck.value = "demo"
+    setValidation()
+}
+
+demo();
