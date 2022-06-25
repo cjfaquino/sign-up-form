@@ -24,17 +24,18 @@ h1, .imageAuthor,
     color: white;
 }
 
-.textBar {
+.textBar, .imageAuthor {
     background-color: rgba(0, 0, 0, 0.5);
 }
 
 h1 {
     font-size: 3rem;
     margin: auto;
+    height: 50%;
 }
 
-h1, h1>img {
-    height: 50%;
+h1>img {
+    height: 37.5px;
 }
 
 p {
@@ -90,8 +91,7 @@ input.createBtn {
 
 .imageAuthor {
     font-size: .7rem;
-    position: relative;
-    bottom: 15px;
+    margin-top: auto;
 }
 
 .top {
@@ -115,4 +115,54 @@ input.createBtn {
     color: var(--highlight);
     text-decoration: none;
     font-weight: 800;
+}
+
+@media only screen and (min-width: 600px) {
+    .container {
+        display: flex;
+    }
+
+    .image {
+        height: 100vh;
+        width: 33vw;
+    }
+
+    .textBar {
+        height: 100px;
+        margin-top: 100px;
+    }
+
+    h1>img {
+        height: 37.5px;
+    }
+
+    .imageAuthor {
+        top: 60vh;
+        background-color: unset;
+        margin-bottom: 10px;
+    }
+
+    ul {
+        max-width: 900px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    input {
+        width: 400px;
+        margin-right: 30px;
+        height: 40px;
+    }
+}
+
+
+@media only screen and (max-width: 1373px) {
+    input {
+        width: 100%;
+    }
+
+    ul {
+        max-width: 600px;
+        display: block;
+    }
 }
