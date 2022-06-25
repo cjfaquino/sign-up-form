@@ -1,5 +1,5 @@
 :root {
-    --highlight: rgb(255, 136, 0);
+    --highlight: #fe7f03;
 }
 
 * {
@@ -52,6 +52,7 @@ input:focus {
 input.createBtn {
     width: auto;
     margin-top: 60px;
+    color: white;
     background-color: var(--highlight);
 }
 
