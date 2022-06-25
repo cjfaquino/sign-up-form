@@ -112,6 +112,12 @@ input.createBtn {
     margin-bottom: 60px;
 }
 
+.requirements {
+    color: red;
+    font-size: .8rem;
+    display: none;
+}
+
 .login {
     padding: 30px 0;
 }
