@@ -5,9 +5,6 @@ const pass = document.getElementById('password');
 const passCheck = document.getElementById('pw_check');
 const passNoValid = document.querySelector('.requirements');
 
-passCheck.addEventListener('change', setValidation);
-pass.addEventListener('change', setValidation);
-
 function setValid() {
   passNoValid.style.visibility = 'hidden';
   pass.style.border = '1px solid grey';
@@ -21,7 +18,9 @@ function setInvalid() {
 }
 
 function setValidation() {
-  pass.value !== passCheck.value && passCheck.value ? setInvalid() : setValid();
+  if (pass.value !== passCheck.value && passCheck.value) {
+    setInvalid();
+  } else setValid();
 }
 
 function demo() {
@@ -29,5 +28,8 @@ function demo() {
   passCheck.value = 'demo';
   setValidation();
 }
+
+passCheck.addEventListener('change', setValidation);
+pass.addEventListener('change', setValidation);
 
 demo();
