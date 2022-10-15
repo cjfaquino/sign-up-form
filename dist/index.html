@@ -33,33 +33,37 @@
                   <li>
                     <label for="firstName">First Name </label>
                     <input type="text" name="firstName" id="firstName" placeholder="Christian" required/>
+                    <div class="error" aria-live="polite"></div>
                   </li>
                   <li>
                     <label for="lastName">Last Name </label>
                     <input type="text" name="lastName" id="lastName" placeholder="Aquino" required/>
+                    <div class="error" aria-live="polite"></div>
                   </li>
                   <li>
                     <label for="email">Email </label>
                     <input type="email" name="email" id="email" placeholder="christian@example.com" required/>
+                    <div class="error" aria-live="polite"></div>
                   </li>
                   <li>
                     <label for="phone">Phone Number </label>
                     <input type="tel" name="phone" id="phone" placeholder="(xxx)-xxx-xxxx" required/>
+                    <div class="error" aria-live="polite"></div>
                   </li>
                   <li>
                     <label for="password">Password </label>
                     <input type="password" name="password" id="password" required/>
+                    <div class="error" aria-live="polite"></div>
                   </li>
                   <li>
-                    <label for="pw_check">Confirm Password </label>
-                    <input type="password" name="pw_check" id="pw_check" required/>
-                    <div class="requirements">* Passwords do not match</div>
+                    <label for="password-confirm">Confirm Password </label>
+                    <input type="password" name="password-confirm" id="password-confirm" required/>
+                    <div class="error" aria-live="polite"></div>
                   </li>
                 </ul>
             </div>
             <input type="submit" class="wrapper createBtn" value="Create Account" />
           </form>
-
         </div>
 
         <p class="login wrapper">
