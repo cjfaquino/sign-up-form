@@ -4,7 +4,10 @@
   "description": "### Features - Mobile support - Check if password is the same after inputting second password",
   "main": "scripts.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "webpack --watch --mode=development",
+    "start": "webpack serve --open",
+    "build": "webpack --mode=production"
   },
   "repository": {
     "type": "git",
