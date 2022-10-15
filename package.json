@@ -2,7 +2,7 @@
   "name": "sign-up-form",
   "version": "1.0.0",
   "description": "### Features - Mobile support - Check if password is the same after inputting second password",
-  "main": "scripts.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch": "webpack --watch --mode=development",

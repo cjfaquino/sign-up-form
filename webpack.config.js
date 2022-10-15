@@ -8,7 +8,7 @@ module.exports = {
     static: './dist',
   },
   output: {
-    filename: 'index.js',
+    filename: 'main.js',
     path: path.resolve(__dirname, 'dist'),
   },
   module: {
