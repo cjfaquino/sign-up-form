@@ -1,3 +1,5 @@
+import './styles.css';
+
 const pass = document.getElementById('password');
 const passCheck = document.getElementById('pw_check');
 const passNoValid = document.querySelector('.requirements');
