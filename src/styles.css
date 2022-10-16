@@ -75,6 +75,10 @@ input:focus {
     outline: none;
 }
 
+input::placeholder {
+    color: rgb(42, 42, 42);
+}
+
 input.createBtn {
     width: auto;
     margin-top: 60px;
