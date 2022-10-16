@@ -10,7 +10,10 @@
     color: rgb(187, 187, 187);
 }
 
-html, input, .image, .main {
+html,
+input,
+.image,
+.main {
     background-color: black;
 }
 
@@ -18,13 +21,15 @@ html, input, .image, .main {
     margin: 0 30px;
 }
 
-h1, .imageAuthor,
+h1,
+.imageAuthor,
 .imageAuthor a {
     text-align: center;
     color: white;
 }
 
-.textBar, .imageAuthor {
+.textBar,
+.imageAuthor {
     background-color: rgba(0, 0, 0, 0.5);
 }
 
@@ -46,7 +51,8 @@ ul {
     list-style-type: none;
 }
 
-label, input {
+label,
+input {
     color: white;
 }
 
@@ -103,12 +109,12 @@ input.createBtn {
     padding-top: 50px;
 }
 
-.top > p:nth-child(2) {
+.top>p:nth-child(2) {
     display: block;
     margin-bottom: 20px;
 }
 
-.top > p:last-child {
+.top>p:last-child {
     margin-bottom: 60px;
 }
 
@@ -128,11 +134,19 @@ input.createBtn {
     font-weight: 800;
 }
 
+.error.active {
+    color: red;
+}
+
+input.active {
+    border: 1px solid rgb(180, 0, 0);
+}
+
 @media only screen and (min-width: 600px) {
     :root {
         --container-radius: 20px;
     }
-    
+
     body {
         display: flex;
         justify-content: center;
@@ -140,7 +154,7 @@ input.createBtn {
         height: 100vh;
         background-color: rgb(20, 20, 20);
     }
-    
+
     .container {
         display: flex;
         align-items: stretch;
@@ -170,11 +184,11 @@ input.createBtn {
     }
 
     .main {
-        max-width:700px;
+        max-width: 700px;
         border-top-right-radius: var(--container-radius);
         border-bottom-right-radius: var(--container-radius);
     }
-    
+
     ul {
         max-width: 900px;
         display: flex;
