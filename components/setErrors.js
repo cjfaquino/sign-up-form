@@ -10,6 +10,44 @@ export const setEmailError = (input, error) => {
   }
 };
 
+export const setFirstNameError = (input, error) => {
+  if (input.validity.valueMissing) {
+    error.textContent = 'You need to enter your first name.';
+  } else if (
+    input.validity.typeMismatch ||
+    input.validity.badInput ||
+    input.validity.patternMismatch
+  ) {
+    error.textContent = 'Please enter a valid name.';
+  }
+};
+
+export const setLastNameError = (input, error) => {
+  if (input.validity.valueMissing) {
+    error.textContent = 'You need to enter your last name.';
+  } else if (
+    input.validity.typeMismatch ||
+    input.validity.badInput ||
+    input.validity.patternMismatch
+  ) {
+    error.textContent = 'Please enter a valid name.';
+  }
+};
+
+export const setPhoneError = (input, error) => {
+  if (input.validity.valueMissing) {
+    error.textContent = 'You need to enter a phone number';
+  } else if (
+    input.validity.typeMismatch ||
+    input.validity.badInput ||
+    input.validity.patternMismatch
+  ) {
+    error.textContent = 'Please enter a valid phone number.';
+  } else if (input.validity.tooShort || input.validity.rangeUnderflow) {
+    error.textContent = 'Phone number needs to be 10 digits.';
+  }
+};
+
 export const setPwdConfirmError = (input, error) => {
   if (input.validity.valueMissing) {
     error.textContent = 'Please re-enter password here.';

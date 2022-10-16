@@ -1,6 +1,9 @@
 import {
   setEmailError,
+  setFirstNameError,
+  setLastNameError,
   setPasswordError,
+  setPhoneError,
   setPwdConfirmError,
 } from './setErrors';
 
@@ -19,7 +22,13 @@ const showError = (input) => {
   error.className = 'error active';
   input.className = 'active';
 
-  if (input.name === 'email') {
+  if (input.name === 'firstName') {
+    setFirstNameError(input, error);
+  } else if (input.name === 'lastName') {
+    setLastNameError(input, error);
+  } else if (input.name === 'phone') {
+    setPhoneError(input, error);
+  } else if (input.name === 'email') {
     setEmailError(input, error);
   } else if (input.name === 'password') {
     setPasswordError(input, error);
