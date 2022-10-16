@@ -140,6 +140,7 @@ input.createBtn {
 
 .error.active {
     color: red;
+    font-size: .8rem;
 }
 
 input.active {
