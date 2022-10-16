@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign-up Form</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="image">
+        <div class="textBar">
+          <h1><img src="../imgs/chat.png" alt="Logo">Amet</h1>
+          
+        </div>
+        <p class="imageAuthor">Photo by <a href="https://unsplash.com/@hellocolor">Pawel Nolbert</a> on <a href="https://unsplash.com/photos/4u2U8EO9OzY">unsplash</a>.</p>
+      </div>
+      <div class="main">
+        <div class="top wrapper">
+          <p>
+            This is not a real service! Lorem ipsum amet consectetur
+            adipisicing elit. Ipsum a magnam possimus? 
+          <p>Sign up <em>now</em> to get started.</p>
+          </p>
+          <p>You <em>know</em> you want to.</p>
+        </div>
+
+        <div>
+          <form novalidate>
+              <div class="wrapper">
+                <p>Let's do this!</p>
+                <ul>
+                  <li class="input-item">
+                    <label for="firstName">First Name </label>
+                    <input type="text" name="firstName" id="firstName" placeholder="Christian" required/>
+                    <div class="error" aria-live="polite"></div>
+                  </li>
+                  <li class="input-item">
+                    <label for="lastName">Last Name </label>
+                    <input type="text" name="lastName" id="lastName" placeholder="Aquino" required/>
+                    <div class="error" aria-live="polite"></div>
+                  </li>
+                  <li class="input-item">
+                    <label for="email">Email </label>
+                    <input type="email" name="email" id="email" placeholder="christian@example.com" required/>
+                    <div class="error" aria-live="polite"></div>
+                  </li>
+                  <li class="input-item">
+                    <label for="phone">Phone Number </label>
+                    <input type="tel" name="phone" id="phone" placeholder="(xxx)-xxx-xxxx" required/>
+                    <div class="error" aria-live="polite"></div>
+                  </li>
+                  <li class="input-item">
+                    <label for="password">Password </label>
+                    <input type="password" name="password" id="password" required/>
+                    <div class="error" aria-live="polite"></div>
+                  </li>
+                  <li class="input-item">
+                    <label for="password-confirm">Confirm Password </label>
+                    <input type="password" name="password-confirm" id="password-confirm" required/>
+                    <div class="error" aria-live="polite"></div>
+                  </li>
+                </ul>
+            </div>
+            <input type="submit" class="wrapper createBtn" value="Create Account" />
+          </form>
+        </div>
+
+        <p class="login wrapper">
+          Already have an account?
+          <a href="/">Log In</a>
+        </p>
+      </div>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>
