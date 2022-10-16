@@ -201,8 +201,11 @@ input.active {
         justify-content: space-between;
     }
 
-    input {
+    .input-item {
         width: 300px;
+    }
+
+    input {
         height: 40px;
     }
 
@@ -223,7 +226,7 @@ input.active {
         --container-radius: 0;
     }
 
-    input {
+    .input-item {
         width: 100%;
     }
 
