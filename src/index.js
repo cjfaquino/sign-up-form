@@ -3,11 +3,9 @@ import '../components/formatPhone';
 import '../components/checkValid';
 
 const password = document.querySelector('#password');
-const firstN = document.querySelector('#firstName');
-const lastN = document.querySelector('#lastName');
+const phone = document.querySelector('#phone');
 
-firstN.pattern = "/^[a-z ,.'-]+$/i";
-lastN.pattern = "/^[a-z ,.'-]+$/i";
+phone.minLength = 14;
 
 password.pattern =
   '^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$';
